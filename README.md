@@ -7,6 +7,8 @@ This project explored diﬀerent language models to detect stigma towards Schizo
 > 
 ![Alt text](data/summary.png?raw=true "Title")
 
+![Alt text](data/table_summary.png?raw=true "Title")
+
 Contents
 --------
 
@@ -53,4 +55,7 @@ Questions and Contact
 
 For any further questions feel free to drop me an email gregory.verghese@gmail.com
 
-[1]
+References
+--------------------
+
+[1] J. Sagar, C. Odoi, D. Wykes, and M. Cella, “Machine learning to detect mental health stigma on social media,” in prep.
