@@ -1,18 +1,26 @@
-# schizophrenia-twitter
+Detecting Stigma towards Schizophrenia from Twitter using Neural Embedding Models
+========================================================================================
 
-Project contains following 7 notebooks
+This project explored diﬀerent language models to detect stigma towards Schizophrenia from Twitter posts. I build upon the study by Jilka et al using two other types of language representations and try to improve on a baseline bag of words model that scored 85% accuracy. Using neural word embeddings we achieve an accuracy of 89% with a Support Vector Machine (SVM) classiﬁer with the Word2Vec model. Finally, I explored deep contextualised word embeddings (BERT model) and get a maximum accuracy of 92% and an average accuracy of 90%. Furthermore, I ﬁnd that despite a signiﬁcantly smaller data set (13k tweets) the trained FastText and Word2Vec models perform better than the standard pre-trained GloVe model (trained on over 2 billion general subject tweets) which scores only 81%. I then explored character embedding models and found the best accuracy was only 71%. Finally, using vector arithmetic to represent word analogies I ﬁnd interesting results for my embedding vectors with intuitively satisfying answers to word analogies like the following
 
-1. 01 preprocessing.ipynb carries out initial cleaning of data, remove inconsistencies and nan values etc
-2. 02 baseline.ipynb contains the code for the tf-idf model and classification
-3. 03 embeddings.ipynb contains all the code related to generating FastText and Word2Vec models
-4. 04 machine learning.ipynb contains code related to classification of embedding models
-5. 05 neural networks.ipynb defines neural network models used for classification with embedding models
-6. 06 bert.ipynb contains code for finetuning bert model in sentence classification task
-7. 07 bert2.ipynb contains unadapted code for finetuning bert model in sentence classification task
-8. 08 analysis.ipynb
-9. 09 SpaceyMoji
+> bipolar + medication = wit
+> 
+![Alt text](data/summary.png?raw=true "Title")
 
-following scripts
+
+The project contains following 7 notebooks:
+
+1. preprocessing.ipynb carries out initial cleaning of data, remove inconsistencies and nan values etc
+2. baseline.ipynb contains the code for the tf-idf model and classification
+3. embeddings.ipynb contains all the code related to generating FastText and Word2Vec models
+4. machine learning.ipynb contains code related to classification of embedding models
+5. neural networks.ipynb defines neural network models used for classification with embedding models
+6. bert.ipynb contains code for finetuning bert model in sentence classification task
+7. bert2.ipynb contains unadapted code for finetuning bert model in sentence classification task
+8. analysis.ipynb
+9. SpaceyMoji
+
+and the following scripts:
 
 evaluation.py
 evaluation1.py
@@ -37,8 +45,6 @@ The scripts just contain classes or function that are used across notebooks and 
 
 All scripts and workbooks are python 2 except notebooks 05, 06, 07 and 09.
 
-Link to Pytorch implementation:
-
-https://mccormickml.com/2019/07/22/BERT-fine-tuning/
-
 For any further questions feel free to drop me an email gregory.verghese@gmail.com
+
+[1]
