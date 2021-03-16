@@ -6,8 +6,7 @@ This project explored diﬀerent language models to detect stigma towards Schizo
 <p align="center">
     **bipolar + medication = wit**
 </p>
-> 
-> 
+
 ![Alt text](data/summary.png?raw=true "Title")
 
 ![Alt text](data/table_summary.png?raw=true "Title")
