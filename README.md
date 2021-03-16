@@ -7,6 +7,8 @@ This project explored diﬀerent language models to detect stigma towards Schizo
 > 
 ![Alt text](data/summary.png?raw=true "Title")
 
+Contents
+--------
 
 The project contains following 7 notebooks:
 
@@ -33,9 +35,9 @@ Preprocessing.py
 
 The scripts just contain classes or function that are used across notebooks and therefore it made sense to abstract out. The general workflow follows the numbering system. The dates included in the data folder, of which there are subfolders. Generally only interested in the files in the data/dataOut/Schiz/ path and data/baseline path. It is clear in the notebooks where data is being pulled from. There is also a embeddings folder where the embeddings are saved down. The code descriptions can be found in the appendix of the paper. General workflow is as follows
 
-01 cleans the data
-02 is all baseline model logic
-03 here we apply NLP transformations, train all embedding models (Word2Vec and FastText and save them down
+1. data preprocessing
+2. baseline model - tf-idf code and feature engineering
+3. NLP transformations, train all embedding models (Word2Vec and FastText and save them down
 04 All machine learning code for classifying other than 1DCNN and LSTM live here
 05 follows much the same logic as 04 but is concerned with neural networks
 06 Bert Pytorch implementation, code provided Chris Mckormicks blog, url below
@@ -44,6 +46,10 @@ The scripts just contain classes or function that are used across notebooks and 
 09 SpaceyMoji used to tokenize the files, unfortunately I realised late on that NLTK does not properly tokenise all the emojis. SpaceyMoji is in Python3 Since the embedding and preprocessing logic is in Python2 I had to create a separate notebook
 
 All scripts and workbooks are python 2 except notebooks 05, 06, 07 and 09.
+
+
+Questions and Contact
+--------------------
 
 For any further questions feel free to drop me an email gregory.verghese@gmail.com
 
