@@ -7,6 +7,7 @@ This project explored diﬀerent language models to detect stigma towards Schizo
 > 
 ![Alt text](data/summary.png?raw=true "Title")
 
+
 The project contains following 7 notebooks:
 
 1. preprocessing.ipynb carries out initial cleaning of data, remove inconsistencies and nan values etc
