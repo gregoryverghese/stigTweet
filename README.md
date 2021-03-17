@@ -1,7 +1,7 @@
 Detecting Stigma towards Schizophrenia from Twitter using Neural Embedding Models
 ========================================================================================
 
-This project explored diﬀerent language models to detect stigma towards Schizophrenia from Twitter posts. I build upon the study by Jilka et al using two other types of language representations and try to improve on a baseline bag of words model that scored 85% accuracy. Using neural word embeddings we achieve an accuracy of 89% with a Support Vector Machine (SVM) classiﬁer with the Word2Vec model. Finally, I explored deep contextualised word embeddings (BERT model) and get a maximum accuracy of 92% and an average accuracy of 90%. Furthermore, I ﬁnd that despite a signiﬁcantly smaller data set (13k tweets) the trained FastText and Word2Vec models perform better than the standard pre-trained GloVe model (trained on over 2 billion general subject tweets) which scores only 81%. I then explored character embedding models and found the best accuracy was only 71%. Finally, using vector arithmetic to represent word analogies I ﬁnd interesting results for my embedding vectors with intuitively satisfying answers to word analogies like the following
+This project explored diﬀerent language representation models to detect stigma towards Schizophrenia from Twitter posts. I build upon the study by Jilka et al using two other types of language representations and try to improve on a baseline bag of words model that scored 85% accuracy. Using neural word embeddings we achieve an accuracy of 89% with a Support Vector Machine (SVM) classiﬁer with the Word2Vec model. Finally, using, deep contextualised word embeddings (BERT) the model achieved 92% and 90% for maxmium and average accuracy respectively. In addition, despite a signiﬁcantly smaller data set (13k tweets) the trained FastText and Word2Vec models performed better than the standard pre-trained GloVe model (trained on over 2 billion general subject tweets) which scored 81%. Character embedding models scored 71%. Interestingly, word embeddings can be interogated using vector arithmetic to represent word analogies such as.
 
 <p align="center">
     <strong> bipolar + medication = wit</strong>
@@ -28,14 +28,20 @@ The project contains following 7 notebooks:
 
 following scripts contain classes/functions used across notebooks:
 
-1.evaluation.py
-2.evaluation1.py
-3.feature_engineering.py
-4.feature_engineering1.py
-5.utility.py
-6.ml.py
-7.ml_config.py
-8.preprocessing.py
+1. evaluation.py
+2. evaluation1.py
+3. feature_engineering.py
+4. feature_engineering1.py
+5. utility.py
+6. ml.py
+7. ml_config.py
+8. preprocessing.py
+
+Todo
+--------------------
+
+1. add roc graphs
+2. look at reddit data
 
 Questions and Contact
 --------------------
