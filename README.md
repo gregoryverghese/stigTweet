@@ -1,54 +1,50 @@
-Detecting Stigma towards Schizophrenia from Twitter using Neural Embedding Models
-========================================================================================
+# Detecting Stigma towards Schizophrenia from Twitter using Neural Embedding Models
 
-This project explored diﬀerent language representation models to detect stigma towards Schizophrenia from Twitter posts. I build upon the study by Jilka et al using two other types of language representations and try to improve on a baseline bag of words model that scored 85% accuracy. Using neural word embeddings we achieve an accuracy of 89% with a Support Vector Machine (SVM) classiﬁer with the Word2Vec model. Finally, using, deep contextualised word embeddings (BERT) the model achieved 92% and 90% for maxmium and average accuracy respectively. In addition, despite a signiﬁcantly smaller data set (13k tweets) the trained FastText and Word2Vec models performed better than the standard pre-trained GloVe model (trained on over 2 billion general subject tweets) which scored 81%. Character embedding models scored 71%. Interestingly, word embeddings can be interogated using vector arithmetic to represent word analogies such as.
+This project explores different language representation models to detect stigma towards schizophrenia from Twitter posts. Building upon the study by Jilka et al., this work employs two additional types of language representations to improve on a baseline bag-of-words model that scored 85% accuracy. Using neural word embeddings, an accuracy of 89% was achieved with a Support Vector Machine (SVM) classifier with the Word2Vec model. Finally, using deep contextualized word embeddings (BERT), the model achieved maximum and average accuracies of 92% and 90%, respectively. Despite a significantly smaller dataset (13k tweets), the trained FastText and Word2Vec models outperformed the standard pre-trained GloVe model (trained on over 2 billion general subject tweets), which scored 81%. Character embedding models scored 71%. Interestingly, word embeddings can be interrogated using vector arithmetic to represent word analogies, such as:
 
 <p align="center">
-    <strong> bipolar + medication = wit</strong>
+    <strong>bipolar + medication = wit</strong>
 </p>
 
-![Alt text](data/summary.png?raw=true "Title")
+![Summary](data/summary.png?raw=true "Summary")
 
-![Alt text](data/table_summary.png?raw=true "Title")
+![Table Summary](data/table_summary.png?raw=true "Table Summary")
 
-Contents
---------
+## Contents
 
-The project contains following 7 notebooks:
+The project contains the following 7 notebooks:
 
-1. preprocessing: data preprocessing 
-2. baseline: tf-idf code, feature engineering and baseline classifiers
-3. embeddings: generates FastText and Word2Vec embeddings
-4. machine learning: ml classifiers
-5. neural networks: neural network models
-6. bert: Pytorch implementation for finetuning Bert model (adapted from Chris Mckormicks blog)
-7. bert2: Pytorch implementation for finetuning Bert model (unadapted from Chris Mckormicks blog)
-9. analysis:
-10. SpaceyMoji: emoji tokenizer
+1. **preprocessing**: Data preprocessing 
+2. **baseline**: TF-IDF code, feature engineering, and baseline classifiers
+3. **embeddings**: Generates FastText and Word2Vec embeddings
+4. **machine_learning**: ML classifiers
+5. **neural_networks**: Neural network models
+6. **bert**: PyTorch implementation for fine-tuning BERT model (adapted from Chris McCormick's blog)
+7. **bert2**: PyTorch implementation for fine-tuning BERT model (unadapted from Chris McCormick's blog)
+8. **analysis**: Analysis of results
+9. **SpaceyMoji**: Emoji tokenizer
 
-following scripts contain classes/functions used across notebooks:
+The following scripts contain classes/functions used across notebooks:
 
-1. evaluation.py
-2. evaluation1.py
-3. feature_engineering.py
-4. feature_engineering1.py
-5. utility.py
-6. ml.py
-7. ml_config.py
-8. preprocessing.py
+1. **evaluation.py**
+2. **evaluation1.py**
+3. **feature_engineering.py**
+4. **feature_engineering1.py**
+5. **utility.py**
+6. **ml.py**
+7. **ml_config.py**
+8. **preprocessing.py**
 
-Todo
---------------------
+## Todo
 
-1. add roc graphs
-2. look at reddit data
+- [ ] Add ROC graphs
+- [ ] Look at Reddit data
 
-Questions and Contact
---------------------
+## Questions and Contact
 
-For any further questions feel free to drop me an email gregory.verghese@gmail.com
+For any further questions, feel free to drop me an email: [gregory.verghese@gmail.com](mailto:gregory.verghese@gmail.com)
 
-References
---------------------
+## References
 
 [1] J. Sagar, C. Odoi, D. Wykes, and M. Cella, “Machine learning to detect mental health stigma on social media,” in prep.
+
